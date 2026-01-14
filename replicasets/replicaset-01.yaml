@@ -5,7 +5,7 @@ metadata:
   labels:
     name: example
 spec:
-  replicas: 3
+  replicas: 4 # Cambiapo de 3 a 4 réplicas, actualiza sin desactivar los pods
   selector:
     matchLabels:
       name: example

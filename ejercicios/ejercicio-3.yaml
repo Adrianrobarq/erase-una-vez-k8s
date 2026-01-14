@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: demo
+  labels:
+    app: demo
+    chapter: rs
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: demo
+      language: go
+  template:
+    metadata:
+      labels:
+        app: demo
+        language: go
+    spec:
+      containers:
+        - name: demo-container
+          image: ghcr.io/mmorejon/erase-una-vez-1:v0.3.0

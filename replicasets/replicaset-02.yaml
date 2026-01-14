@@ -25,5 +25,5 @@ spec:
             - /bin/cat
             - /tmp/healthy
           initialDelaySeconds: 20
-          failureThreshold: 3
-          periodSeconds: 5
+          failureThreshold: 2
+          periodSeconds: 8

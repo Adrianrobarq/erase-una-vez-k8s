@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: example
+  labels:
+    app: demo
+    language: go
+spec:
+  containers:
+  - name: demo-ex-2
+    image: nginx:1.25.2-alpine
+    resources:
+      limits:
+        memory: "128Mi"
+        cpu: "500m"
+    ports:
+      - containerPort: 80

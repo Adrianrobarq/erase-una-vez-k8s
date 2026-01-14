@@ -21,4 +21,4 @@ spec:
           name: erase-una-vez-1
           env:
             - name: CHARACTER
-              value: "un elfo."
+              value: "un elfo desplegando otra vez."
